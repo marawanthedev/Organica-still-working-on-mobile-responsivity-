@@ -1,0 +1,26 @@
+.icon-white {
+  color: white;
+}
+.icon-mid{
+    font-size: 2rem;
+}
+.yellow{
+  background-image: linear-gradient(
+    to right,
+    $color-yellow-2,
+    $color-yellow-2
+  );
+  background-repeat: no-repeat;
+  background-position-y: 2rem;
+  &__low{
+  background-position-y: 4rem;
+
+  }
+}
+.faded{
+  opacity: 0.5;
+  transition: opacity .2s;
+}
+.margin-left-small{
+  margin-left: 2rem;
+}

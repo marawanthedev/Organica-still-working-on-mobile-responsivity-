@@ -1,0 +1,33 @@
+.section-preview-main {
+  background: url(/imgs/bg-1.jpg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 77rem;
+  // min-height: 34.11458vw;
+  height: 70rem;
+  position: relative;
+}
+.section-items {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+}
+.section-organic {
+  position: relative;
+  background: url(/imgs/img-3.png);
+  height: 65rem;
+  background-position-x: -10rem;
+  overflow: hidden;
+}
+.section-items-preview {
+  position: relative;
+  height: 90rem;
+  &__container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+
+  }
+}

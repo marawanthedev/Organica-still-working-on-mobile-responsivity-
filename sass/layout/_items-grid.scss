@@ -1,0 +1,25 @@
+.section-items-preview {
+  &__container {
+    position: relative;
+    height: 90%;
+    @include clearfix;
+    &-left,
+    &-right {
+      position: absolute;
+      height: 75%;
+      top: 12rem;
+      background-color: white;
+    }
+    &-left {
+      left: 1rem;
+      border-radius: 10px;
+     
+    }
+    &-right {
+      right: 1rem;  
+      &__mini {
+        background-color: green;
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.composition{
+position: relative;
+padding-bottom: 6rem;
+background-color: $color-white;
+margin-bottom: 5rem;
+
+&__navigation{
+    &__button{
+        position: absolute;
+        padding: 0;
+        height:1.5rem;
+        width: 1.5rem;
+        background-color: $color-white-dark;
+        border: none;
+        transition: all .24s;
+        cursor: pointer;
+        &:hover{
+            background-color: $color-green-2;
+        }
+
+      &__1{
+
+        left:70rem;
+        bottom:2rem;
+        
+      }
+      &__2{
+        left:73rem;
+        bottom:2rem;
+      
+      }
+       
+    }
+}
+    @include clearfix;
+        &__item-1{
+            position: relative;
+            background: $color-white-2 url(/imgs/item-1.jpg);
+            background-position: center;
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-position-x: -5rem;
+            transition: all .4s;
+            
+            &:hover{
+            background-position-x: -3rem;
+            }
+        }
+        &__item-2{
+            position: relative;
+            background: $color-white url(/imgs/item-2.jpg);
+            background-position: center;
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-position-x: -10rem;
+            transition: all .4s;
+            
+            &:hover{
+            background-position-x: -8rem;
+            }
+        }
+
+        &__item-3{
+            position: relative;
+            background:$color-black url(/imgs/item-3.jpg);
+            background-position: center;
+            background-size: 54%;
+            background-repeat: no-repeat;
+            background-position-x: -10rem;
+            transition: all .4s;
+            
+            &:hover{
+            background-position-x: -8rem;
+            }
+        }
+
+        &__right-side{
+            position: absolute;
+            right:5rem;
+            top:8rem;
+            &__text-content{
+                font-size: 2rem;
+                color:$color-grey-light-3;
+                text-transform: uppercase;
+                letter-spacing: .16rem;
+                font-weight:500;
+                &__header{
+                    display: block;
+                    font-size: 5rem;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: bold;
+                }
+            }
+        }
+        &__price{
+            display: block;
+            color: rgb(35, 121, 102);
+            font-size: 2rem;
+            margin-top: 3rem;
+            font-family: "Montserrat", sans-serif;
+
+        }
+        &__button{
+            display: inline-block;
+            font-size: 2rem;
+            color:$color-yellow-3;
+            margin-top: 4rem;
+        }
+        &__item:hover  &__button{
+            color:white;
+            background-color: $color-green-2;
+        }
+        &__item:hover &__price{
+            color:$color-green-2;
+        }
+
+}

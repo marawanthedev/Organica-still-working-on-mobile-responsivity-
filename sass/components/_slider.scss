@@ -1,0 +1,100 @@
+.slider {
+  background-color: transparent;
+  height: 100%;
+  width: 50rem;
+  position: absolute;
+  right: 17rem;
+  top: 17rem;
+  overflow: scroll;
+  scroll-padding: 5rem;
+  scroll-behavior: smooth;
+
+
+  &__item {
+    background-color: $color-white;
+    position: absolute;
+    width: 100%;
+    height: 19rem;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    &:not(:first-child) {
+      margin-top: 22rem;
+    }
+    &__1 {
+      z-index: 10;
+      transition: all 0.5s;
+      
+    }
+    &__2 {
+      z-index: 10;
+      transition: all 0.5s;
+    }
+    &__3 {
+      margin-top: 4rem;
+      z-index: 10;
+      bottom: 1rem;
+      transition: all 0.5s;
+    }
+
+    &__4 {
+      bottom: -19rem;
+      opacity: 0;
+    }
+    
+    &__left-side {
+      display: inline-block;
+      background-size: cover;
+      background-position: center;
+      width: 33%;
+      height: 100%;
+      float: left;
+      background-position-x: 1rem;
+      margin-right: 1%;
+      background: url(/imgs/icon-1.png);
+      &__icon-1 {
+        background: url(/imgs/icon-1.png);
+      }
+      &__icon-2 {
+        background: url(/imgs/icon-2.png);
+      }
+      &__icon-3 {
+        background: url(/imgs/icon-3.png);
+      }
+    }
+    &__right-side {
+      display: inline-block;
+      width: 66%;
+      float: left;
+      height: 100%;
+    }
+    &__header {
+      font-family: "Roboto", sans-serif;
+      font-size: 2.5rem;
+      color: $color-black;
+      letter-spacing: 0.3rem;
+      margin-bottom: 2rem;
+      margin-top: 4rem;
+      transition: all 0.3s;
+      &:hover {
+        color: $color-green;
+      }
+    }
+    &__paragraph {
+      width: 90%;
+      font-size: 1.4rem;
+      font-family: "Lato", sans-serif;
+      color: $color-grey-light-2;
+      font-weight: 500;
+      margin-right: -2rem;
+    }
+  }
+
+}
+
+
+.fade-up{
+    animation: fadeup 1s ease forwards;
+}
+.show-up{
+    animation: showup 1s ease forwards;
+}

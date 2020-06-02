@@ -1,0 +1,49 @@
+.carousel {
+  position: relative;
+
+  &__content {
+    position: absolute;
+    top: 10rem;
+    left: 20rem;
+    height: 75%;
+    text-transform: uppercase;
+  }
+  &__header {
+    font-size: 6rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 3rem;
+    font-family: "Roboto", sans-serif;
+
+  }
+  &__slogan {
+    display: inline-block;
+    font-size: 2.5rem;
+    color: $color-black;
+    margin-bottom: 3rem;
+    word-spacing: 1rem;
+    transform: translateX(3rem);
+    font-weight: bold;
+   
+    font-family: "Montserrat", sans-serif;
+
+   
+  }
+  &__main-content {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    font-weight: 100;
+    word-spacing: 1rem;
+    transform: translateX(3rem);
+  }
+  &__button {
+    display: inline-block;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    padding: 2rem 5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+   
+  }
+}

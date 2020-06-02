@@ -1,0 +1,63 @@
+.header{
+  position: relative;
+
+  &__head {
+    position: relative;
+    padding: 3rem 32rem;
+    background-color: $color-grey-dark-1;
+    border-bottom: 7px solid $color-grey-light-2;
+    font-family: "Poppins";
+    &__left-content {
+      font-size: 1.5rem;
+      color: $color-white;
+      position: absolute;
+      top: 2rem;
+      left: 15rem;
+    }
+    
+
+    &__right-content {
+      position: absolute;
+      font-size: 1.5rem;
+      right: 15rem;
+      top: 2rem;
+      color: $color-grey-light-1;
+    }
+  }
+
+  &__brand-info{
+      position: relative;
+      background-color: $color-white;
+      padding: 7rem;
+      font-family: 'Roboto', sans-serif;
+    &__img{
+        position: absolute;
+      width: 14rem;
+      left:15rem;
+      top:3rem;
+      
+    }
+    &__text-content{
+        display: table;
+        position: absolute;
+        top:3rem;
+        right:12rem;
+        font-size: 1.5rem;
+    &__right{
+        float: right;
+        padding-left: 3rem;
+        border-left: 1px solid $color-grey-dark-1;
+        width: 12rem;
+    }
+    &__left{
+        float: left;
+        margin-right: 2rem;
+        width: 12rem;
+
+    }
+    }
+  }
+  
+  
+}
+

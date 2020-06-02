@@ -1,0 +1,149 @@
+.card {
+  position: relative;
+  width: 100%;
+  background-color: $color-grey-light-4;
+  border-radius: 10px;
+  display: inline-block;
+ 
+  &__special{
+    margin-top:-10rem;
+  }
+  &__back,
+  &__front {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.3s;
+  }
+
+  &__back {
+    opacity: 0;
+  }
+  &__front {
+    opacity: 1;
+  }
+  &__header,
+  &__header__small {
+    font-family: "Roboto", sans-serif;
+  }
+  &__header {
+    font-size: 4rem;
+    margin-left: 18rem;
+    padding-top: 2rem;
+    &__small {
+      font-size: 2rem;
+      margin-left: 9rem;
+      margin-top: 1rem;
+    }
+  }
+  &__img {
+    &-big {
+      // position: absolute;
+      // top:14rem;
+      // left:10rem;
+      width: 35rem;
+
+      margin-left: 11rem;
+      padding-top: 3rem;
+      margin-bottom: 2rem;
+      &__back {
+        width: 30rem;
+      }
+    }
+    &__small {
+      width: 17rem;
+      height: 17rem;
+      margin-left: 5rem;
+      padding-top: 3rem;
+    }
+  }
+  &__price,&__price__small{
+    font-family: "Roboto", sans-serif;
+    color: $color-green;
+    font-weight: 600;
+  }
+  &__price {
+    // position: absolute;
+    // top:7.5rem;
+    // left:24rem;
+    font-size: 2rem;
+    margin-left: 26rem;
+    margin-top: 0.5rem;
+    &__small{
+      font-size: 1.2rem;
+      margin-left: 12rem;
+      margin-top: 1rem;
+    }
+  }
+  &__time {
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+    height: 6.5rem;
+    width: 6.5rem;
+    text-align: center;
+
+    // &:after{
+    //   content: "";
+    //   border: 1px solid green;
+    //   height: 6.5rem;
+    //   width: 6.5rem;
+    //   background-color: red;
+    // }
+
+    text-align: center;
+    &:first-child {
+      margin-left: 17rem;
+    }
+    &:not(:first-child) {
+      margin-left: 3rem;
+    }
+    &__text {
+      padding: 2rem 2rem;
+      min-width: 5rem;
+      min-height: 5rem;
+      border-radius: 50%;
+      border: 1px solid $color-timer;
+      @include center-element;
+      text-align: center;
+    }
+  }
+  &__button {
+    display: inline-block;
+    padding: 2rem 4rem;
+    margin-left: 24rem;
+    margin-top: 3rem;
+    background-color: red;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+
+    &-next,
+    &-prev {
+      position: absolute;
+      padding: 3rem 3rem;
+      border-radius: 50%;
+      bottom: 28rem;
+      font-family: "Roboto", sans-serif;
+      background: white;
+      color: $color-grey-light-2;
+      font-weight: 600;
+      z-index: 10;
+      &:after {
+        content: "";
+        display: block;
+        width: 30%;
+        height: 3px;
+        background-color: $color-grey-light-2;
+        position: absolute;
+        bottom: 2rem;
+      }
+    }
+    &-next {
+      right: -5rem;
+    }
+    &-prev {
+      left: -5rem;
+    }
+  }
+}
